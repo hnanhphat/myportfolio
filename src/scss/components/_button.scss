@@ -1,0 +1,76 @@
+.btn {
+  border: 2px solid $yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  font-family: $mon;
+  font-weight: bold;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: $yellow;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    @include tranform_c(translateX(-50%));
+    @include transition_c(all 0.3s ease-out);
+  }
+  span {
+    color: $yellow;
+    @include transition_c(all 0.3s ease-out);
+  }
+
+  @include respond(hover) {
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+      span {
+        color: $grey;
+      }
+    }
+  }
+
+  &--grey {
+    border-color: $grey;
+    &::before {
+      background: $grey;
+    }
+    span {
+      color: $grey;
+    }
+
+    @include respond(hover) {
+      &:hover {
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  &--white {
+    border-color: $white;
+    &::before {
+      background: $white;
+    }
+    span {
+      color: $white;
+    }
+
+    @include respond(hover) {
+      &:hover {
+        span {
+          color: $grey;
+        }
+      }
+    }
+  }
+}
