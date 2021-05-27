@@ -168,13 +168,6 @@ const HomePage = () => {
       <section id="contact" className="contact">
         <ul className="contact__info">
           <li>
-            <h3>Mailing Address</h3>
-            <p>
-              170/51A Bui Dinh Tuy, Ward 12, <br />
-              Binh Thanh District, Ho Chi Minh City
-            </p>
-          </li>
-          <li>
             <h3>Email Address</h3>
             <a href="mailto:hnanhphat@gmail.com">hnanhphat@gmail.com</a>
           </li>
