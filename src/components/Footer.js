@@ -79,14 +79,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="footer__copyright">
-        2021 - Portfolio developed by{" "}
-        <a
-          href="https://barryhoang.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Barry Hoang
-        </a>
+        2021 - Portfolio developed by Barry Hoang
       </p>
     </footer>
   );

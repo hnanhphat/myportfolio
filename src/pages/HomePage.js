@@ -42,7 +42,7 @@ const HomePage = () => {
             JavaScript, ReactJs, NodeJs, ExpressJs, PHP, Wordpress, MongoDb.
           </p>
           <a
-            href="https://barryhoang.netlify.app/"
+            href="https://drive.google.com/file/d/1qU6jAedoa5t7MItI6cNjBLyBLu7Bhl1z/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="btn btn--grey"
